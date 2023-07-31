@@ -5,6 +5,7 @@
 </head>
 <body>
     <h1>Dwight Schrute GIF</h1>
+	<p>Identity Theft Is Not A Joke!</p>
     <img id="dwightGif" src="" alt="Dwight Schrute GIF">
     <script>
         // JavaScript code to include the GIF
