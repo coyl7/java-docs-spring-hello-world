@@ -1,17 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>GIF Example</title>
-</head>
-<body>
-    <h1>Dwight Schrute GIF</h1>
-    <p>Identity Theft Is Not A Joke!</p>
-    <img id="dwightGif" src="" alt="Dwight Schrute GIF">
-    <script>
-        // JavaScript code to include the GIF
-        const gifUrl = "https://media.tenor.com/R8Ot9SBUktQAAAAC/dwight-schrute-the-office.gif";
-        const imgElement = document.getElementById("dwightGif");
-        imgElement.src = gifUrl;
-    </script>
-</body>
-</html>
+import javax.swing.*;
+import java.awt.*;
+
+public class DwightGifApp {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> createAndShowGUI());
+    }
+
+    private static void createAndShowGUI() {
+        JFrame frame = new JFrame("Dwight Schrute GIF");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 300);
+        frame.setLayout(new BorderLayout());
+
+        JLabel textLabel = new JLabel("Identity Theft Is Not A Joke!");
+        textLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        frame.add(textLabel, BorderLayout.NORTH);
+
+        ImageIcon dwightGifIcon = new ImageIcon("https://media.tenor.com/R8Ot9SBUktQAAAAC/dwight-schrute-the-office.gif");
+        JLabel gifLabel = new JLabel(dwightGifIcon);
+        gifLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        frame.add(gifLabel, BorderLayout.CENTER);
+
+        frame.setVisible(true);
+    }
+}
