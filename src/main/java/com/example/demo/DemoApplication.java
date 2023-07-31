@@ -1,20 +1,16 @@
-package com.example.demo;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@SpringBootApplication
-@RestController
-public class DemoApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
-
-	@RequestMapping("/")
-	String sayHello() {
-		return "Hello Marc!";
-	}
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GIF Example</title>
+</head>
+<body>
+    <h1>Dwight Schrute GIF</h1>
+    <img id="dwightGif" src="" alt="Dwight Schrute GIF">
+    <script>
+        // JavaScript code to include the GIF
+        const gifUrl = "https://media.tenor.com/R8Ot9SBUktQAAAAC/dwight-schrute-the-office.gif";
+        const imgElement = document.getElementById("dwightGif");
+        imgElement.src = gifUrl;
+    </script>
+</body>
+</html>
