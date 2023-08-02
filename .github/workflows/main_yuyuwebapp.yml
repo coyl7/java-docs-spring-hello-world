@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'YuyuWebApp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7C411DE040834C988EF56DEF3355EE9D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FC4C357D349A49878E0B0748EA51BEF8 }}
           package: '*.jar'
